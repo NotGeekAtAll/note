@@ -18,7 +18,7 @@
 #### 工作区和暂存区
 - git add命令实际上就是把要提交的所有修改放到暂存区（Stage），然后，执行git commit就可以一次性把暂存区的所有修改提交到分支
 
-#### 撤销修改aaa
+#### 撤销修改
 git checkout -- file ： 丢弃工作区的修改
 
 - 修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态
@@ -38,6 +38,11 @@ git reset HEAD file
   2. git push -u origin master ： 推送到远程仓库
 - 克隆 ：git clone git@github.com:youremail/repository.git
 
+#### 分支管理
+- 创建与合并分支
+  1. git checkout -b dev ： 创建并切换分支
+  2. git add，git commit ： 提交分支
+  3. git merge dev ： 合并分支
 
 #### git命令
 - git status ：查看状态
@@ -45,4 +50,10 @@ git reset HEAD file
 - git log ： 查看提交历史，以便确定要回退到哪个版本 --pretty=oneline 美化
 - git reflog ： 查看命令历史，以便确定要回到未来的哪个版本
 - git remote add origin git@github.com:youremail/learngit.git ： 设置远程库的名称
+- git branch ：查看分支
+- git branch <name> ： 创建分支
+- git checkout <name> ： 切换分支
+- git merge <name> ： 合并某分支到当前分支
+- git branch -d <name> ： 删除分支 
+
 
