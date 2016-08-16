@@ -29,9 +29,20 @@ git reset HEAD file
 - 回退版本，也可以把暂存区的修改回退到工作区
 - HEAD 表示最新版本
 
+#### 远程仓库
+- 创建SSH
+  1. 创建SSH Key ： ssh-keygen -t rsa -C "youremail@example.com"
+  2. 登陆GitHub，打开“Account settings”，点“Add SSH， Key”在Key文本框里粘贴id_rsa.pub
+- 添加远程库
+  1. 登陆GitHub，创建新的repository
+  2. git push -u origin master ： 推送到远程仓库
+- 克隆 ：git clone git@github.com:youremail/repository.git
+
+
 #### git命令
 - git status ：查看状态
 - git diff ：若文件被修改，查看修改内容
 - git log ： 查看提交历史，以便确定要回退到哪个版本 --pretty=oneline 美化
-- git reflog: 查看命令历史，以便确定要回到未来的哪个版本
+- git reflog ： 查看命令历史，以便确定要回到未来的哪个版本
+- git remote add origin git@github.com:youremail/learngit.git ： 设置远程库的名称
 
