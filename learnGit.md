@@ -8,7 +8,7 @@
     1.git add    可反复多次使用，添加多个文件
     
     2.git commit 
-#### 版本
+#### 版本 b
 - 版本回退
  
     1.git reset --hard HEAD^  ：HEAD表示当前版本 两个版本HEAD^， 一百个版本HEAD~100
